@@ -1,38 +1,94 @@
-.App {
-  text-align: center;
-}
+@media only screen and (max-width: 1000px) {
+  .media {
+    position: absolute;
+    left: 185px;
+    gap: 2px;
+  }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+  .media ul li {
+    font-size: 10px;
+    font-weight: 700;
+  }
+  .landing {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    z-index: -100;
+    top: 80px;
   }
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media only screen and (max-width: 615px) {
+  .landing {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 80px;
+    left: 40px;
+    width: 90%;
   }
-  to {
-    transform: rotate(360deg);
+
+  .google_scan {
+    position: absolute;
+    top: 350px;
+    right: 45px;
+  }
+  .landing img {
+    position: absolute;
+    width: 100%;
+    right: 15px;
+    top: 140px;
+    object-fit: cover;
+  }
+  .landing h1{
+    margin-left: 25px;
+    font-size: 25px;
+  }
+  .img_scan {
+    margin-top: 320px;
   }
 }
+@media only screen and (max-width: 320px) {
+   
+  .landing h1{
+    margin-left: 15px;
+    font-size: 20px;
+  }
+
+}
+
+@media only screen and (max-width: 376px) {
+   
+  .google_scan {
+    position: absolute;
+    top: 350px;
+    right: 36px;
+   
+  }
+  .landing img {
+    position: absolute;
+    width: 100%;
+    right: 14px;
+    top: 140px;
+    object-fit: cover;
+  }
+
+}
+@media only screen and (max-width: 360px) {
+   
+  .google_scan {
+    position: absolute;
+    top: 350px;
+    right: 25px;
+   
+  }
+  .landing img {
+    position: absolute;
+    width: 100%;
+    right: 10px;
+    top: 140px;
+    object-fit: cover;
+  }
+
+}
+
+
